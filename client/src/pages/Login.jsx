@@ -18,7 +18,7 @@ const Login = () => {
 
   const Login = async () => {
     try {
-      const res = await fetch("http://localhost:5000/api/users/login", {
+      const res = await fetch("https://adarshablog-backend.onrender.com/api/users/login", {
         method: "POST",
         body: JSON.stringify({ email, password }),
         headers: {
