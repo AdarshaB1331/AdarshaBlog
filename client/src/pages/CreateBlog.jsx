@@ -48,7 +48,7 @@ const CreateBlog = () => {
         imageUrl = await getDownloadURL(imageRef);
       }
 
-      const res = await fetch("http://localhost:5000/api/products/posts/post", {
+      const res = await fetch("https://adarshablog-backend.onrender.com/api/products/posts/post", {
         method: "POST",
         body: JSON.stringify({
           title,
