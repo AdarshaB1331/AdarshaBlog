@@ -30,7 +30,7 @@ const ContactUs = () => {
     }
     try {
       const res = await fetch(
-        "http://localhost:5000/api/products/posts/message",
+        "https://adarshablog-backend.onrender.com/api/products/posts/message",
         {
           method: "POST",
           body: JSON.stringify({ name, email, phoneNumber, message }),
