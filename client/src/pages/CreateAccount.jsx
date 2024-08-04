@@ -24,7 +24,7 @@ const CreateAccount = () => {
   const createAccount = async () => {
     try {
       const res = await fetch(
-        "http://localhost:5000/api/users/create-account",
+        "https://adarshablog-backend.onrender.com/api/users/create-account",
         {
           method: "POST",
           body: JSON.stringify({ name, email, password }),
